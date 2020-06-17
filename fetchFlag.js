@@ -1,4 +1,5 @@
-
+$(document).ready(function(){
+    alert("hi");}
 const btn = document.querySelector('#getText');
 const input = document.querySelector('#country');
 const div = document.querySelector('#myDiv');
