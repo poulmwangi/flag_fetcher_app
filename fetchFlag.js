@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
      
     const btn = document.querySelector('#getText');
 const input = document.querySelector('#country');
@@ -48,5 +48,5 @@ btn.addEventListener('click',function(e){
     request.send()
 })
 
-}
+
 
