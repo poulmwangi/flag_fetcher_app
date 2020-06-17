@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    alert("hi");}
-const btn = document.querySelector('#getText');
+     
+    const btn = document.querySelector('#getText');
 const input = document.querySelector('#country');
 const div = document.querySelector('#myDiv');
 
@@ -47,4 +47,6 @@ btn.addEventListener('click',function(e){
     request.open('GET','http://restcountries.eu/rest/v2/all')
     request.send()
 })
+
+}
 
