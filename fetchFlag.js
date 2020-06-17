@@ -1,6 +1,5 @@
 
-     
-    const btn = document.querySelector('#getText');
+const btn = document.querySelector('#getText');
 const input = document.querySelector('#country');
 const div = document.querySelector('#myDiv');
 
@@ -15,13 +14,13 @@ btn.addEventListener('click',function(e){
                 const p3 = document.createElement('p');
                 const p4 = document.createElement('p');
                 const p5 = document.createElement('p')
-                p5.textContent = `Time zone is ${country.timezones}`
+                p5.textContent = `Time Zone: ${country.timezones}`
 
-                p4.textContent = `${country.name} borders are ${country.borders}`
-                p3.textContent = `${country.name} calling code is ${country.callingCodes}`
+                p4.textContent = `${country.name} Borders :${country.borders}`
+                p3.textContent = `${country.name} calling Code: ${country.callingCodes}`
                 p.textContent = country.flag
                 const p2 = document.createElement('p')
-                p2.textContent = `Country is ${country.name}`
+                p2.textContent = `Country:${country.name}`
                 div.textContent = ''
                 div.appendChild(p2)
                 div.appendChild(p4)
@@ -31,8 +30,8 @@ btn.addEventListener('click',function(e){
                 img.style = 'width:300px;height:250px'
                 img.setAttribute('src',p.textContent)
                 div.appendChild(img)
+                
             }
-            
         })
     
         }
@@ -47,6 +46,4 @@ btn.addEventListener('click',function(e){
     request.open('GET','http://restcountries.eu/rest/v2/all')
     request.send()
 })
-
-
 
