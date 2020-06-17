@@ -1,0 +1,49 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+}
+.wrapper{
+margin: auto;
+max-width:50%;
+padding: 10px;
+border: 10px solid burlywood;
+}
+input{
+    width: 50%;
+    padding: 5px;
+    border: 1px dotted gray;
+    border-radius: 0.5rem;
+    font-size: 14px;
+}
+input:focus{
+    border-style: dashed;
+}
+button{
+    padding: 8px;
+    border-color: aliceblue;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+background-color: orange;
+color: white;
+}
+footer{
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+    padding: 11rem;
+}
+
+@media only screen and (max-width: 900px) {
+    footer{
+        padding: 0px;
+    }
+  }
+
+  p{
+      font-size: 20px;
+  }
