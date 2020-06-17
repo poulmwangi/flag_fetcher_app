@@ -6,7 +6,7 @@ h1{
 }
 .wrapper{
 margin: auto;
-max-width:50%;
+max-width:100%;
 padding: 10px;
 border: 10px solid burlywood;
 }
@@ -38,7 +38,7 @@ footer{
     padding: 11rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     footer{
         padding: 0px;
     }
@@ -46,4 +46,22 @@ footer{
 
   p{
       font-size: 20px;
+      font-weight: bold;
   }
+
+ 
+
+  @media only screen and (min-width: 500px){
+    .wrapper{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .wrapper{
+        max-width: 50%;
+    }
+}
+
+
+  
