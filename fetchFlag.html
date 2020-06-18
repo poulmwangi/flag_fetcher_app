@@ -50,11 +50,11 @@ btn.addEventListener('click',function(e){
                 const p5 = document.createElement('p')
                 const p6 = document.createElement('p')
                 const  population = country.population.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-                p6.textContent = `Population ${population}`;
+                p6.textContent = `Population: ${population}`;
                 p5.textContent = `Time Zone: ${country.timezones}`
 
-                p4.textContent = `${country.name} Borders :${country.borders}`
-                p3.textContent = `${country.name} calling Code: ${country.callingCodes}`
+                p4.textContent = `Borders :${country.borders}`
+                p3.textContent = `calling Code: ${country.callingCodes}`
                 p.textContent = country.flag
                 const p2 = document.createElement('p')
                 p2.textContent = `Country:${country.name}`
